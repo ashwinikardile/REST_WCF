@@ -13,6 +13,12 @@ namespace REST_WCF.Service
 	[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 	public class Service1 : IService1
 	{
+		public int DoOperation(int val)
+		{
+			//throw new NotImplementedException();
+			return val = val;
+		}
+
 		public String DoWork()
 		{
 			return "REST WCF Services";
