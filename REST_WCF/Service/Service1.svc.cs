@@ -13,10 +13,9 @@ namespace REST_WCF.Service
 	[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 	public class Service1 : IService1
 	{
-		public int DoOperation(int val)
+		public int DoSquare(int value)
 		{
-			//throw new NotImplementedException();
-			return val = val;
+			return value * value;
 		}
 
 		public String DoWork()
