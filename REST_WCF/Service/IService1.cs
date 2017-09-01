@@ -19,5 +19,9 @@ namespace REST_WCF.Service
 		[OperationContract]
 		[WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "DoSquare")]
 		int DoSquare(int val);
+
+		[OperationContract]
+		[WebInvoke(Method = "POST", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Bare, UriTemplate = "DoAddValues")]
+		int Addition(AddValues valAddition);
 	}
 }

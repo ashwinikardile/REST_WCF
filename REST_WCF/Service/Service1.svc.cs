@@ -22,5 +22,25 @@ namespace REST_WCF.Service
 		{
 			return "REST WCF Services";
 		}
+
+		public int Addition(AddValues valAddition)
+		{
+			//throw new NotImplementedException();
+			return valAddition.val1 + valAddition.val2;
+		}
+	}
+	[DataContract]
+	public class AddValues
+	{
+		[DataMember]
+		public int val1 { get; set; }
+		[DataMember]
+		public int val2 { get; set; }
+
+		public AddValues()
+		{
+			val1 = 0;
+			val2 = 0;
+		}
 	}
 }
